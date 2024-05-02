@@ -1,0 +1,35 @@
+<div class="fields">
+
+<section>
+<label for="a">enter the first operand</label>
+<input id="a" type="number" [(ngModel)]="a">
+</section>
+
+<section>
+<label for="b">enter the second operand</label>
+<input id="b" type="number" [(ngModel)]="b">
+</section>
+
+<section>
+<label for="add">Addition</label>
+<input id="add" type="radio" name="operand" value="add" checked="true" (click)="setChoice($event)">
+</section>
+
+
+<section>
+<label for="sub">Subtraction</label>
+<input id="sub" type="radio" name="operand" value="sub" (click)="setChoice($event)">
+</section>
+
+<section>
+<label for="mul">Multiplication</label>
+<input id="mul" type="radio" name="operand" value="mul" (click)="setChoice($event)">
+</section>
+
+<section>
+<label for="div">Division</label>
+<input id="div" type="radio" name="operand" value="div" (click)="setChoice($event)">
+</section>
+<button (click)="fire()">compute</button>
+
+</div>
